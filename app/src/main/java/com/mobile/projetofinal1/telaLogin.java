@@ -10,5 +10,8 @@ public class telaLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login);
+
+        //esconde a barra azul da tela
+        getSupportActionBar().hide();
     }
 }

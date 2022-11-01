@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">projetoFinal1</string>
+    <string name="acessar">Acessar</string>
+    <string name="text_cadastro">Novo usuário? Clique aqui</string>
 </resources>
