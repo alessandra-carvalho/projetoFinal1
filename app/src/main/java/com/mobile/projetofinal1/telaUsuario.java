@@ -11,7 +11,7 @@ public class telaUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_usuario);
 
-        //esconde o cabeçalho do projeto
+        //esconde o cabeçalho do projeto***
         getSupportActionBar().hide();
     }
 }
