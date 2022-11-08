@@ -5,9 +5,7 @@
 
     <gradient
         android:screenOrientation="portrait"
-        android:startColor="@color/pink"
-        android:centerColor="@color/light_pink"
-        android:endColor="@color/brown"
+        android:startColor="@color/dark_orange"
         android:angle="180"/>
 
 </shape>

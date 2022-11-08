@@ -18,7 +18,7 @@
     <ImageView
         android:id="@+id/carrinho"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:src="@drawable/carrinho"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,15 +59,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_senha"/>
 
-    <ProgressBar
-        android:id="@+id/progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerComponentes"/>
 
     <TextView
         android:id="@+id/text_cadastro"
@@ -75,11 +66,11 @@
         android:layout_height="wrap_content"
         android:text="@string/text_cadastro"
         android:textSize="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintTop_toBottomOf="@id/progress"
+        app:layout_constraintTop_toBottomOf="@id/bt_acessar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
