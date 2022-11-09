@@ -19,7 +19,7 @@ public class telaLogin extends AppCompatActivity {
         //esconde a barra azul da tela
         getSupportActionBar().hide();
 
-        IniciarComponentes();
+        IniciarCadastro();
 
         text_cadastro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +33,7 @@ public class telaLogin extends AppCompatActivity {
     }
 
     //faz referencia ao id do botão text_cadastro que leva para a próxima tela
-    private void IniciarComponentes(){
+    private void IniciarCadastro(){
         text_cadastro = findViewById(R.id.text_cadastro);
     }
 }
