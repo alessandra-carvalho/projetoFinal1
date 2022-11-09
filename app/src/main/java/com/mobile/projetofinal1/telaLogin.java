@@ -31,6 +31,7 @@ public class telaLogin extends AppCompatActivity {
             }
         });
     }
+
     //faz referencia ao id do botão text_cadastro que leva para a próxima tela
     private void IniciarComponentes(){
         text_cadastro = findViewById(R.id.text_cadastro);
