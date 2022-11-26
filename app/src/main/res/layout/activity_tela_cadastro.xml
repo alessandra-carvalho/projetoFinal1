@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context=".telaCadastro">
+    tools:context=".presenter.telaCadastro">
 
     <TextView
         android:id="@+id/cabeçalho_cadastro"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/cabeçalho_cadastro"
         android:textSize="50sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,15 +26,16 @@
         app:layout_constraintTop_toBottomOf="@id/cabeçalho_cadastro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-    
+
     <EditText
         android:id="@+id/edit_nome"
         style="@style/Edit_Text"
+        android:layout_marginTop="8dp"
         android:hint="Nome:"
         android:inputType="text"
-        app:layout_constraintTop_toTopOf="@id/container_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro"
         app:layout_constraintStart_toStartOf="@id/container_cadastro"
-        app:layout_constraintEnd_toEndOf="@id/container_cadastro"/>
+        app:layout_constraintTop_toTopOf="@id/container_cadastro" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -57,12 +58,13 @@
         app:layout_constraintEnd_toEndOf="@id/container_cadastro"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cadastrar"
         style="@style/Button"
-        android:text="Cadastrar"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/container_cadastro"
-        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="inserirRegistro"
+        android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
-       />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_cadastro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
