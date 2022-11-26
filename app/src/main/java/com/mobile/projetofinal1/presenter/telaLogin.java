@@ -45,22 +45,6 @@ public class telaLogin extends AppCompatActivity {
         //redireciona p/ a tela de cadastro
         IniciarTelaCadastro();
 
-        // popula lista de usuarios
-//        User user1 = new User(20, "ale1", "ale1@dominio.com", "1234");
-//        User user2 = new User(25, "ana2", "ana2@dominio.com", "5678");
-
-        //add os usuários na lista
-//        List<User> listUser = new ArrayList<>();
-//        listUser.add(user1);
-//        listUser.add(user2);
-
-        //busca usuário conforme campos preenchidos
-
-
-
-
-
-
 
         //validação do evento do botão login
         bt_acessar.setOnClickListener(new View.OnClickListener() {
@@ -70,9 +54,8 @@ public class telaLogin extends AppCompatActivity {
             public void onClick(View view) {
                 this.view = view;
 
+                // conexão e busca do usuario no banco
                 DBUser objDBUser = new DBUser();
-                //objDBUser.buscarDadosLogin(edit_email.getText().toString(), edit_senha.getText().toString(), this);
-
                 List<User> listUser = new ArrayList<>(objDBUser.buscarDadosLogin(edit_email.getText().toString(), edit_senha.getText().toString(), telaLogin.this));
 
                 //valida se o login e senha estão na lista de usuários cadastrados
@@ -106,9 +89,7 @@ public class telaLogin extends AppCompatActivity {
                     startActivity(intent);
 
                 }
-//                else{
-//                    mensagem("Dados incorretos!");
-//                }
+
             }
         });
 

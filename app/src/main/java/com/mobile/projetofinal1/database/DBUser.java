@@ -18,7 +18,6 @@ public class DBUser {
     static SQLiteDatabase db=null;
     static Cursor cursor;
 
-
     public static void abrirBanco(Activity act){
         try{
             ContextWrapper cw= new ContextWrapper(act);
@@ -88,19 +87,4 @@ public class DBUser {
     }
 
 
-    /*public static Cursor buscarDados(Activity act) {
-        abrirBanco(act);
-        //cursor que permite a navegação
-        cursor = db.query("contatos",
-                new String[]{"nome", "fone"},
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-        );
-        cursor.moveToFirst();
-        return cursor;
-    }*/
   }

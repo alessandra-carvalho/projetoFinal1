@@ -20,9 +20,6 @@
             android:name=".presenter.telaCadastro"
             android:exported="false" />
         <activity
-            android:name=".presenter.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".presenter.telaLogin"
             android:exported="true">
             <intent-filter>
